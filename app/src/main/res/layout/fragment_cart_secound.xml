@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAddress"
+        android:layout_marginTop="20dp"
+        android:text="Address :"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTxtAddress"
+        android:layout_below="@+id/txtAddress"
+        android:hint="Address"
+        android:lines="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtZipCode"
+        android:layout_marginTop="20dp"
+        android:text="Zip Code :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edTxtAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTxtZipCode"
+        android:layout_below="@+id/txtZipCode"
+        android:hint="Zip Code"
+        android:lines="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPhone"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edTxtZipCode"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTxtPhone"
+        android:layout_below="@+id/txtPhone"
+        android:hint="Phone Number "
+        android:lines="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:layout_marginTop="20dp"
+        android:text="Email :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edTxtPhone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTxtEmail"
+        android:layout_below="@+id/txtEmail"
+        android:hint="Email "
+        android:lines="2"/>
+    <LinearLayout
+        android:id="@+id/btnLinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:text="Back"
+            android:layout_marginEnd="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNext"
+            android:text="Next"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWarning"
+        android:text="Warning"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnLinLayout"
+        android:textColor="#F44336"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+</RelativeLayout>
